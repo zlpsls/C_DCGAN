@@ -1,0 +1,25 @@
+#dir
+checkpoint_dir: checkpoint
+test_dir: samples
+
+# parameters
+DATASET: data
+MODEL_NAME: cDCGAN
+LABEL_NUM: 6
+z_dim: 100
+# training
+EPOCH: 50
+VIZ_MAX_OUT: 30
+LEARNING_RATE: 0.0002
+# data
+DATA_FLIST:
+  data: [
+    './data/data.flist',
+    './data/label.flist'
+  ]
+IMG_SHAPES: [64, 64, 1]
+TEST_SHAPES: [64, 64, 1]
+batchsize: 8
+
+# loss
+log_alpha: 0.5
